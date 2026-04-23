@@ -1,12 +1,32 @@
 cff-version: 1.2.0
-title: "Influence Index for Institutional Research Evaluation"
-message: "If you use this code or data, please cite the repository and associated paper."
+title: "A Log-Based Influence Index for Evaluating Research Institutions"
+message: "If you use this repository, please cite the associated paper and dataset."
 type: software
 
 authors:
   - family-names: Voyant
     given-names: Cyril
     affiliation: "Mines Paris – PSL University"
+
+  - family-names: Baas
+    given-names: Jeroen
+    affiliation: "Elsevier, Amsterdam, The Netherlands"
+
+  - family-names: Boverhof
+    given-names: Roy
+    affiliation: "Elsevier, Amsterdam, The Netherlands"
+
+  - family-names: Stringari
+    given-names: Paolo
+    affiliation: "Mines Paris – PSL University"
+
+  - family-names: Marchand-Lasserre
+    given-names: Mathilde
+    affiliation: "Mines Paris – PSL University"
+
+  - family-names: Ioannidis
+    given-names: John P. A.
+    affiliation: "Stanford University"
 
 repository-code: "https://github.com/cyrilvoyant/influence-index-bibliometrics"
 
@@ -19,7 +39,6 @@ keywords:
   - institutional analysis
 
 license: MIT
-
 version: 1.0.0
 date-released: 2026-04-23
 
@@ -29,7 +48,7 @@ references:
       - family-names: Baas
         given-names: Jeroen
       - family-names: Ioannidis
-        given-names: John
+        given-names: John P. A.
       - family-names: Voyant
         given-names: Cyril
       - family-names: Boverhof
@@ -38,9 +57,4 @@ references:
     year: 2025
     doi: "10.17632/jn5j7gjpzj.1"
 
-  - type: article
-    authors:
-      - family-names: Voyant
-        given-names: Cyril
-    title: "Science-wide mapping and ranking of institutions based on affiliated authors"
-    doi: "10.64898/2025.12.16.694665"
+
