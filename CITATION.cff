@@ -42,6 +42,10 @@ license: MIT
 version: 1.0.0
 date-released: 2026-04-23
 
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19706465"
+
 references:
   - type: dataset
     authors:
@@ -57,4 +61,20 @@ references:
     year: 2025
     doi: "10.17632/jn5j7gjpzj.1"
 
+- type: article
+    authors:
+      - family-names: Voyant
+        given-names: Cyril
+      - family-names: Baas
+        given-names: Jeroen
+      - family-names: Boverhof
+        given-names: Roy
+      - family-names: Stringari
+        given-names: Paolo
+      - family-names: Marchand-Lasserre
+        given-names: Mathilde
+      - family-names: Ioannidis
+        given-names: John P. A.
+    title: "Science-wide mapping and ranking of institutions based on affiliated authors"
+    doi: "10.64898/2025.12.16.694665"
 
