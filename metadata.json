@@ -40,6 +40,9 @@
   ],
   "license": "MIT",
   "repository": "https://github.com/cyrilvoyant/influence-index-bibliometrics",
+  "version": "1.0.0",
+  "date": "2026-04-23",
+  "doi": "10.5281/zenodo.19706465",
   "related_identifiers": [
     {
       "type": "dataset",
