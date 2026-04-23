@@ -4,6 +4,7 @@ This repository provides MATLAB scripts and processed datasets used to compute a
 
 The approach complements traditional volume-based indicators by focusing on **research concentration** and **temporal dynamics**.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19706465.svg)](https://doi.org/10.5281/zenodo.19706465)
 ---
 
 ## 📌 Concept
