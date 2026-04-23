@@ -131,9 +131,13 @@ MIT License
 
 If you use this work, please cite:
 
-Voyant, C. et al. (2025)  
-Influence Index for Institutional Research Evaluation  
-[DOI to be added after Zenodo publication]
+## Citation
+
+If you use this repository, please cite:
+
+Voyant, C., Baas, J., Boverhof, R., Stringari, P., Marchand-Lasserre, M., Ioannidis, J. P. A. (2026).  
+*A Log-Based Influence Index for Evaluating Research Institutions*.  
+Zenodo. https://doi.org/10.5281/zenodo.19706465
 
 and:
 
