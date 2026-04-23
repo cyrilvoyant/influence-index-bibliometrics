@@ -1,8 +1,8 @@
 # Influence Index for Institutional Research Evaluation
 
-This repository provides MATLAB scripts and processed datasets used to compute and visualize the **Influence Index (I)**, a scale-independent metric designed to quantify institutional research concentration based on the Top 2% scientists framework.
+This repository provides MATLAB scripts and processed datasets used to compute and visualize the **Influence Index (I)**, a scale-independent metric for institutional research evaluation based on the Top 2% scientists framework.
 
-The approach complements traditional volume-based indicators by focusing on **proportional representation** and **temporal dynamics** of influential researchers.
+The approach complements traditional volume-based indicators by focusing on **research concentration** and **temporal dynamics**.
 
 ---
 
@@ -10,118 +10,101 @@ The approach complements traditional volume-based indicators by focusing on **pr
 
 The Influence Index is defined as:
 
-\[
-I = \log_2 \left( \frac{p}{p_0} \right)
-\]
+I = log2(p / p0)
 
 where:
-- \( p = X/N \) is the proportion of Top 2% researchers within an institution,
-- \( p_0 = 0.02 \) is the reference baseline.
+- p = X / N is the proportion of Top 2% researchers
+- p0 = 0.02 is the reference baseline
 
-This logarithmic formulation ensures:
-- symmetry between over- and under-representation,
-- invariance to institutional size,
-- direct interpretability in terms of doubling/halving of research concentration.
+Interpretation:
+- I = 0 → baseline (2%)
+- I = +1 → doubling (4%)
+- I = -1 → halving (1%)
+
+This formulation ensures:
+- symmetry between over- and under-representation
+- independence from institutional size
+- direct interpretability
 
 ---
 
 ## 📊 Data Source
 
-The data used in this repository are derived from:
+The data are derived from:
 
-**Baas, Jeroen; Ioannidis, John; Voyant, Cyril; Boverhof, Roy (2025)**  
-*Science-wide mapping and ranking of institutions based on affiliated authors*  
-Elsevier Data Repository, V1  
-DOI: https://doi.org/10.17632/jn5j7gjpzj.1  
+Baas, J.; Ioannidis, J.; Voyant, C.; Boverhof, R. (2025)  
+Science-wide mapping and ranking of institutions based on affiliated authors  
+Elsevier Data Repository  
+https://doi.org/10.17632/jn5j7gjpzj.1  
 
-The methodology used to construct the institutional dataset is detailed in:
+Methodology:
 
-**Voyant et al. (2025)**  
-DOI: https://doi.org/10.64898/2025.12.16.694665  
+Voyant et al. (2025)  
+https://doi.org/10.64898/2025.12.16.694665  
 
 ⚠️ Note:  
-This repository contains **processed institutional-level data only**.  
-The original raw datasets are subject to licensing restrictions and must be obtained from the Elsevier repository.
+Only processed institutional-level data are provided here.  
+Raw datasets are subject to licensing restrictions.
 
 ---
 
 ## 📁 Repository Structure
-├── code/
-│ ├── main_CDF.m
-│ ├── main_KDE.m
-│ ├── main_Delta.m
-│ └── main_addplots.m
-├── data/
-│ ├── Career.xlsx
-│ └── Single.xlsx
-├── figures/
-└── README.md
 
+- code/  
+  MATLAB scripts for generating figures
+
+- data/  
+  Processed datasets:
+  - Career.xlsx  
+  - Single.xlsx  
+
+- figures/  
+  Output directory for plots
 
 ---
 
 ## ⚙️ Requirements
 
-- MATLAB (tested on R2021b or later)
-- No external toolboxes required
+- MATLAB (R2021b or later)
+- No additional toolboxes required
 
 ---
 
 ## 📊 Input Data Format
 
-The scripts expect two Excel files:
+Both Career.xlsx and Single.xlsx must contain:
 
-### `Career.xlsx` and `Single.xlsx`
-
-Required columns:
-
-- `Institution`
-- `Primary analysis authors` (N)
-- `Ratio (p)`
-- `I`
-- `p_lo`, `p_up`
-- `I_low`, `I_up`
+- Institution
+- Primary analysis authors (N)
+- Ratio (p)
+- I
+- p_lo, p_up
+- I_low, I_up
 
 ---
 
 ## ▶️ Usage
 
-Run the scripts from the `code/` directory:
+Run the scripts from the `code/` folder:
 
-- `main_CDF.m`  
-  → Empirical cumulative distributions (CDF) of \( I \)
-
-- `main_KDE.m`  
-  → Kernel density estimation of \( p \) and \( I \)
-
-- `main_Delta.m`  
-  → Distribution of the dynamic contrast \( \Delta I \)
-
-- `main_addplots.m`  
-  → Scatter plots, caterpillar plots, and uncertainty analysis
-
-Figures are generated automatically and can be exported for publication.
+- main_CDF.m → cumulative distributions of I
+- main_KDE.m → density distributions of p and I
+- main_Delta.m → distribution of ΔI
+- main_addplots.m → scatter, caterpillar and uncertainty plots
 
 ---
 
 ## 🔍 Interpretation
 
-- \( I = 0 \): baseline (2% Top2 researchers)
-- \( I = +1 \): doubling (4%)
-- \( I = -1 \): halving (1%)
-
 The index captures **research concentration**, not volume.
 
-The dynamic contrast:
+The dynamic contrast is defined as:
 
-\[
-\Delta I = I_{\text{cur}} - I_{\text{hist}}
-\]
+ΔI = I_cur − I_hist
 
-allows distinguishing:
-- strengthening institutions (\( \Delta I > 0 \))
-- declining institutions (\( \Delta I < 0 \))
-- stable profiles (\( \Delta I \approx 0 \))
+- ΔI > 0 → increasing concentration
+- ΔI < 0 → decreasing concentration
+- ΔI ≈ 0 → stable profile
 
 ---
 
@@ -132,30 +115,30 @@ This repository is intended for:
 - institutional benchmarking (non-ranking)
 - research policy analysis
 - scientometric studies
-- methodological reproducibility
 
-It is **not designed for competitive ranking or decision-making in isolation**.
+It is not designed for competitive ranking or standalone decision-making.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License.
+MIT License
 
 ---
 
 ## 📚 Citation
 
-If you use this code or data, please cite:
+If you use this work, please cite:
 
-Voyant, C. et al. (2025).
-Influence Index for Institutional Research Evaluation.
+Voyant, C. et al. (2025)  
+Influence Index for Institutional Research Evaluation  
 [DOI to be added after Zenodo publication]
 
-and the original dataset:Baas, J. et al. (2025).
-Science-wide mapping and ranking of institutions.
-Elsevier Data Repository, https://doi.org/10.17632/jn5j7gjpzj.1
+and:
 
+Baas, J. et al. (2025)  
+Science-wide mapping and ranking of institutions  
+https://doi.org/10.17632/jn5j7gjpzj.1  
 
 ---
 
@@ -169,5 +152,5 @@ Centre Observation, Impacts, Énergie (O.I.E.)
 
 ## ⚠️ Disclaimer
 
-Results depend on the underlying Top2% dataset and affiliation aggregation methodology.  
-Interpretation should consider disciplinary composition, data coverage, and statistical uncertainty.
+Results depend on the underlying dataset and affiliation aggregation methodology.  
+Interpretation should consider statistical uncertainty and disciplinary differences.
