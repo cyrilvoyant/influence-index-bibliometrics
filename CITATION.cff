@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: "Influence Index for Institutional Research Evaluation"
+message: "If you use this code or data, please cite the repository and associated paper."
+type: software
+
+authors:
+  - family-names: Voyant
+    given-names: Cyril
+    affiliation: "Mines Paris – PSL University"
+
+repository-code: "https://github.com/cyrilvoyant/influence-index-bibliometrics"
+
+keywords:
+  - bibliometrics
+  - scientometrics
+  - research evaluation
+  - influence index
+  - Top2%
+  - institutional analysis
+
+license: MIT
+
+version: 1.0.0
+date-released: 2026-04-23
+
+references:
+  - type: dataset
+    authors:
+      - family-names: Baas
+        given-names: Jeroen
+      - family-names: Ioannidis
+        given-names: John
+      - family-names: Voyant
+        given-names: Cyril
+      - family-names: Boverhof
+        given-names: Roy
+    title: "Science-wide mapping and ranking of institutions based on affiliated authors"
+    year: 2025
+    doi: "10.17632/jn5j7gjpzj.1"
+
+  - type: article
+    authors:
+      - family-names: Voyant
+        given-names: Cyril
+    title: "Science-wide mapping and ranking of institutions based on affiliated authors"
+    doi: "10.64898/2025.12.16.694665"
