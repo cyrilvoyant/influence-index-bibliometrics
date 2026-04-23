@@ -1,0 +1,53 @@
+{
+  "title": "A Log-Based Influence Index for Evaluating Research Institutions",
+  "description": "A scale-independent metric to measure institutional research concentration based on the Top 2% scientists dataset, with applications to institutional evaluation and strategic analysis.",
+  "keywords": [
+    "bibliometrics",
+    "scientometrics",
+    "research evaluation",
+    "influence index",
+    "Top2%",
+    "institutional analysis",
+    "research concentration",
+    "logarithmic metrics",
+    "institutional performance"
+  ],
+  "authors": [
+    {
+      "name": "Cyril Voyant",
+      "affiliation": "Mines Paris – PSL University"
+    },
+    {
+      "name": "Jeroen Baas",
+      "affiliation": "Elsevier, Amsterdam, The Netherlands"
+    },
+    {
+      "name": "Roy Boverhof",
+      "affiliation": "Elsevier, Amsterdam, The Netherlands"
+    },
+    {
+      "name": "Paolo Stringari",
+      "affiliation": "Mines Paris – PSL University"
+    },
+    {
+      "name": "Mathilde Marchand-Lasserre",
+      "affiliation": "Mines Paris – PSL University"
+    },
+    {
+      "name": "John P. A. Ioannidis",
+      "affiliation": "Stanford University"
+    }
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/cyrilvoyant/influence-index-bibliometrics",
+  "related_identifiers": [
+    {
+      "type": "dataset",
+      "doi": "10.17632/jn5j7gjpzj.1"
+    },
+    {
+      "type": "article",
+      "doi": "10.64898/2025.12.16.694665"
+    }
+  ]
+}
