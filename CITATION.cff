@@ -45,6 +45,9 @@ date-released: 2026-04-23
 
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.19706466"
+    description: "Concept DOI (all versions, Zenodo)"
+  - type: doi
     value: "10.5281/zenodo.19706465"
 
 references:
