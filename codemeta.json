@@ -28,7 +28,9 @@
       "url": "https://person.cyrilvoyant.com",
       "affiliation": {
         "@type": "Organization",
-        "name": "Mines Paris - PSL University, France"
+        "name": "Mines Paris - PSL University, France",
+        "@id": "https://ror.org/04y8cs423",
+        "identifier": "https://ror.org/04y8cs423"
       }
     },
     {
@@ -55,7 +57,9 @@
       "familyName": "Stringari",
       "affiliation": {
         "@type": "Organization",
-        "name": "Mines Paris - PSL University, France"
+        "name": "Mines Paris - PSL University, France",
+        "@id": "https://ror.org/04y8cs423",
+        "identifier": "https://ror.org/04y8cs423"
       }
     },
     {
@@ -64,7 +68,9 @@
       "familyName": "Marchand-Lasserre",
       "affiliation": {
         "@type": "Organization",
-        "name": "Mines Paris - PSL University, France"
+        "name": "Mines Paris - PSL University, France",
+        "@id": "https://ror.org/04y8cs423",
+        "identifier": "https://ror.org/04y8cs423"
       }
     },
     {
@@ -73,7 +79,9 @@
       "familyName": "Ioannidis",
       "affiliation": {
         "@type": "Organization",
-        "name": "Stanford University, USA"
+        "name": "Stanford University, USA",
+        "@id": "https://ror.org/00f54p054",
+        "identifier": "https://ror.org/00f54p054"
       }
     }
   ],
