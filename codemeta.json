@@ -1,0 +1,23 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "A Log-Based Influence Index for Evaluating Research Institutions",
+  "description": "MATLAB code and datasets to compute and visualize the Influence Index for institutional research evaluation, based on the Stanford-Elsevier Top 2% dataset. Provides scale-independent metrics of research influence for institutions.",
+  "version": "1.0.0",
+  "dateModified": "2026-04-23",
+  "license": "https://spdx.org/licenses/MIT",
+  "codeRepository": "https://github.com/cyrilvoyant/influence-index-bibliometrics",
+  "identifier": "https://doi.org/10.5281/zenodo.19706466",
+  "programmingLanguage": "MATLAB",
+  "developmentStatus": "active",
+  "applicationCategory": "Scientometrics",
+  "keywords": ["bibliometrics", "scientometrics", "research evaluation", "influence index", "Top 2 percent", "institutional analysis"],
+  "author": [
+    {"@type": "Person", "givenName": "Cyril", "familyName": "Voyant", "@id": "https://orcid.org/0000-0003-0242-7377", "url": "https://person.cyrilvoyant.com", "affiliation": {"@type": "Organization", "name": "Mines Paris - PSL University, France"}},
+    {"@type": "Person", "givenName": "Jeroen", "familyName": "Baas", "affiliation": {"@type": "Organization", "name": "Elsevier, Amsterdam, The Netherlands"}},
+    {"@type": "Person", "givenName": "Roy", "familyName": "Boverhof", "affiliation": {"@type": "Organization", "name": "Elsevier, Amsterdam, The Netherlands"}},
+    {"@type": "Person", "givenName": "Paolo", "familyName": "Stringari", "affiliation": {"@type": "Organization", "name": "Mines Paris - PSL University, France"}},
+    {"@type": "Person", "givenName": "Mathilde", "familyName": "Marchand-Lasserre", "affiliation": {"@type": "Organization", "name": "Mines Paris - PSL University, France"}},
+    {"@type": "Person", "givenName": "John P. A.", "familyName": "Ioannidis", "affiliation": {"@type": "Organization", "name": "Stanford University, USA"}}
+  ]
+}
