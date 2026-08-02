@@ -11,13 +11,84 @@
   "programmingLanguage": "MATLAB",
   "developmentStatus": "active",
   "applicationCategory": "Scientometrics",
-  "keywords": ["bibliometrics", "scientometrics", "research evaluation", "influence index", "Top 2 percent", "institutional analysis"],
+  "keywords": [
+    "bibliometrics",
+    "scientometrics",
+    "research evaluation",
+    "influence index",
+    "Top 2 percent",
+    "institutional analysis"
+  ],
   "author": [
-    {"@type": "Person", "givenName": "Cyril", "familyName": "Voyant", "@id": "https://orcid.org/0000-0003-0242-7377", "url": "https://person.cyrilvoyant.com", "affiliation": {"@type": "Organization", "name": "Mines Paris - PSL University, France"}},
-    {"@type": "Person", "givenName": "Jeroen", "familyName": "Baas", "affiliation": {"@type": "Organization", "name": "Elsevier, Amsterdam, The Netherlands"}},
-    {"@type": "Person", "givenName": "Roy", "familyName": "Boverhof", "affiliation": {"@type": "Organization", "name": "Elsevier, Amsterdam, The Netherlands"}},
-    {"@type": "Person", "givenName": "Paolo", "familyName": "Stringari", "affiliation": {"@type": "Organization", "name": "Mines Paris - PSL University, France"}},
-    {"@type": "Person", "givenName": "Mathilde", "familyName": "Marchand-Lasserre", "affiliation": {"@type": "Organization", "name": "Mines Paris - PSL University, France"}},
-    {"@type": "Person", "givenName": "John P. A.", "familyName": "Ioannidis", "affiliation": {"@type": "Organization", "name": "Stanford University, USA"}}
+    {
+      "@type": "Person",
+      "givenName": "Cyril",
+      "familyName": "Voyant",
+      "@id": "https://orcid.org/0000-0003-0242-7377",
+      "url": "https://person.cyrilvoyant.com",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Mines Paris - PSL University, France"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Jeroen",
+      "familyName": "Baas",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Elsevier, Amsterdam, The Netherlands"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Roy",
+      "familyName": "Boverhof",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Elsevier, Amsterdam, The Netherlands"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Paolo",
+      "familyName": "Stringari",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Mines Paris - PSL University, France"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Mathilde",
+      "familyName": "Marchand-Lasserre",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Mines Paris - PSL University, France"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "John P. A.",
+      "familyName": "Ioannidis",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Stanford University, USA"
+      }
+    }
+  ],
+  "referencePublication": {
+    "@type": "ScholarlyArticle",
+    "name": "Science-wide mapping and ranking of institutions based on affiliated authors",
+    "identifier": "https://doi.org/10.64898/2025.12.16.694665",
+    "url": "https://www.biorxiv.org/content/10.64898/2025.12.16.694665v1"
+  },
+  "citation": [
+    {
+      "@type": "Dataset",
+      "name": "Science-wide mapping and ranking of institutions based on affiliated authors",
+      "identifier": "https://doi.org/10.17632/jn5j7gjpzj.1",
+      "datePublished": "2025"
+    }
   ]
 }
