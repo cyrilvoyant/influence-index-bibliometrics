@@ -1,93 +1,221 @@
 {
   "@context": {
+    "": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#",
     "@vocab": "https://schema.org/",
-    "wsem": "https://w3id.org/websemantic/ns#"
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "qk": "http://qudt.org/vocab/quantitykind/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "unit": "http://qudt.org/vocab/unit/",
+    "wsem": "https://w3id.org/websemantic/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@type": "SoftwareSourceCode",
-  "@id": "https://doi.org/10.5281/zenodo.19706465",
-  "name": "Influence Index: a log-based measure of research influence for institutions (MATLAB, processed data)",
-  "description": "Reads the concentration of highly cited researchers in an institution against a neutral 2 % baseline, on a doubling scale independent of size.",
-  "codeRepository": "https://github.com/cyrilvoyant/influence-index-bibliometrics",
-  "license": "MIT",
-  "programmingLanguage": "MATLAB",
-  "keywords": [
-    "bibliometrics",
-    "research evaluation",
-    "influence index",
-    "highly cited researchers"
-  ],
-  "dateModified": "2026-10-23",
-  "author": [
+  "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-3118-6859",
       "@type": "Person",
-      "name": "Cyril Voyant",
-      "@id": "https://orcid.org/0000-0003-0242-7377"
+      "name": "John P. A. Ioannidis"
     },
     {
-      "@type": "Person",
-      "name": "Jeroen Baas",
-      "@id": "https://orcid.org/0000-0001-8005-4153"
+      "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#in2",
+      "@type": [
+        "wsem:ParameterDefinition",
+        "PropertyValueSpecification"
+      ],
+      "description": "processed data from the Stanford–Elsevier Top 2 % lists",
+      "name": "Career.xlsx, Single.xlsx",
+      "skos:definition": "processed data from the Stanford–Elsevier Top 2 % lists",
+      "skos:prefLabel": "Career.xlsx, Single.xlsx",
+      "valueRequired": true,
+      "wsem:apiVariable": "Career.xlsx, Single.xlsx"
     },
     {
+      "@id": "https://orcid.org/0000-0002-5403-9328",
       "@type": "Person",
-      "name": "Roy Boverhof",
-      "@id": "https://orcid.org/0000-0002-7299-680X"
+      "name": "Paolo Stringari"
     },
     {
-      "@type": "Person",
-      "name": "Paolo Stringari",
-      "@id": "https://orcid.org/0000-0002-5403-9328"
+      "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#in1",
+      "@type": [
+        "wsem:ParameterDefinition",
+        "PropertyValueSpecification"
+      ],
+      "description": "eligible authors of the institution",
+      "name": "N",
+      "skos:definition": "eligible authors of the institution",
+      "skos:prefLabel": "N",
+      "unitCode": {
+        "@id": "unit:NUM"
+      },
+      "unitText": "count",
+      "valueRequired": true,
+      "wsem:apiVariable": "N",
+      "wsem:canonicalUnit": {
+        "@id": "unit:NUM"
+      },
+      "wsem:quantityKind": {
+        "@id": "qk:Count"
+      }
     },
     {
+      "@id": "https://orcid.org/0000-0001-8005-4153",
+      "@type": "Person",
+      "name": "Jeroen Baas"
+    },
+    {
+      "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#software",
+      "@type": [
+        "wsem:Software",
+        "SoftwareSourceCode"
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-0242-7377"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8005-4153"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7299-680X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5403-9328"
+        },
+        {
+          "@id": "_:N0156969ed7334fedaafaa61d3021ec8b"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3118-6859"
+        }
+      ],
+      "codeRepository": {
+        "@id": "https://github.com/cyrilvoyant/influence-index-bibliometrics"
+      },
+      "dateModified": {
+        "@type": "xsd:date",
+        "@value": "2026-10-23"
+      },
+      "dcterms:modified": "2026-10-23",
+      "description": "Reads the concentration of highly cited researchers in an institution against a neutral 2 % baseline, on a doubling scale independent of size.",
+      "identifier": {
+        "@id": "https://doi.org/10.5281/zenodo.19706465"
+      },
+      "keywords": [
+        "bibliometrics",
+        "research evaluation",
+        "influence index",
+        "highly cited researchers"
+      ],
+      "license": "MIT",
+      "name": "Influence Index: a log-based measure of research influence for institutions (MATLAB, processed data)",
+      "owl:sameAs": {
+        "@id": "https://doi.org/10.5281/zenodo.19706465"
+      },
+      "programmingLanguage": "MATLAB",
+      "wsem:conceptDOI": "https://doi.org/10.5281/zenodo.19706465",
+      "wsem:declaresOutput": [
+        {
+          "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#out0"
+        },
+        {
+          "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#out1"
+        }
+      ],
+      "wsem:declaresParameter": [
+        {
+          "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#in0"
+        },
+        {
+          "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#in1"
+        },
+        {
+          "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#in2"
+        }
+      ]
+    },
+    {
+      "@id": "_:N0156969ed7334fedaafaa61d3021ec8b",
       "@type": "Person",
       "name": "Mathilde Marchand-Lasserre"
     },
     {
+      "@id": "https://orcid.org/0000-0002-7299-680X",
       "@type": "Person",
-      "name": "John P. A. Ioannidis",
-      "@id": "https://orcid.org/0000-0003-3118-6859"
-    }
-  ],
-  "wsem:declaresParameter": [
+      "name": "Roy Boverhof"
+    },
     {
-      "@type": "PropertyValueSpecification",
-      "name": "X",
+      "@id": "https://orcid.org/0000-0003-0242-7377",
+      "@type": "Person",
+      "name": "Cyril Voyant"
+    },
+    {
+      "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#in0",
+      "@type": [
+        "wsem:ParameterDefinition",
+        "PropertyValueSpecification"
+      ],
       "description": "highly cited authors of the institution",
-      "valueRequired": true,
+      "name": "X",
+      "skos:definition": "highly cited authors of the institution",
+      "skos:prefLabel": "X",
+      "unitCode": {
+        "@id": "unit:NUM"
+      },
       "unitText": "count",
-      "unitCode": "http://qudt.org/vocab/unit/NUM"
-    },
-    {
-      "@type": "PropertyValueSpecification",
-      "name": "N",
-      "description": "eligible authors of the institution",
       "valueRequired": true,
-      "unitText": "count",
-      "unitCode": "http://qudt.org/vocab/unit/NUM"
+      "wsem:apiVariable": "X",
+      "wsem:canonicalUnit": {
+        "@id": "unit:NUM"
+      },
+      "wsem:quantityKind": {
+        "@id": "qk:Count"
+      }
     },
     {
-      "@type": "PropertyValueSpecification",
-      "name": "Career.xlsx, Single.xlsx",
-      "description": "processed data from the Stanford–Elsevier Top 2 % lists",
-      "valueRequired": true
-    }
-  ],
-  "wsem:declaresOutput": [
-    {
-      "@type": "PropertyValueSpecification",
-      "name": "I",
-      "description": "Influence Index",
-      "valueRequired": true,
-      "unitText": "1",
-      "unitCode": "http://qudt.org/vocab/unit/UNITLESS"
-    },
-    {
-      "@type": "PropertyValueSpecification",
-      "name": "Delta_I",
+      "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#out1",
+      "@type": [
+        "wsem:OutputVariable",
+        "PropertyValueSpecification"
+      ],
       "description": "change between the current and the historical index",
-      "valueRequired": true,
+      "name": "Delta_I",
+      "skos:definition": "change between the current and the historical index",
+      "skos:prefLabel": "Delta_I",
+      "unitCode": {
+        "@id": "unit:UNITLESS"
+      },
       "unitText": "1",
-      "unitCode": "http://qudt.org/vocab/unit/UNITLESS"
+      "valueRequired": true,
+      "wsem:apiVariable": "Delta_I",
+      "wsem:canonicalUnit": {
+        "@id": "unit:UNITLESS"
+      },
+      "wsem:quantityKind": {
+        "@id": "qk:Dimensionless"
+      }
+    },
+    {
+      "@id": "https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#out0",
+      "@type": [
+        "wsem:OutputVariable",
+        "PropertyValueSpecification"
+      ],
+      "description": "Influence Index",
+      "name": "I",
+      "skos:definition": "Influence Index",
+      "skos:prefLabel": "I",
+      "unitCode": {
+        "@id": "unit:UNITLESS"
+      },
+      "unitText": "1",
+      "valueRequired": true,
+      "wsem:apiVariable": "I",
+      "wsem:canonicalUnit": {
+        "@id": "unit:UNITLESS"
+      },
+      "wsem:quantityKind": {
+        "@id": "qk:Dimensionless"
+      }
     }
   ]
 }

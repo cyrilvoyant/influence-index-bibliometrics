@@ -1,65 +1,117 @@
-@prefix wsem: <https://w3id.org/websemantic/ns#> .
+# influence-index-bibliometrics: WebSemantic, QUDT and schema.org description (generated 2026-10-23; documentation only).
+# The JSON-LD file in this folder is the same graph.
+@prefix : <https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qk: <http://qudt.org/vocab/quantitykind/> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix qk: <http://qudt.org/vocab/quantitykind/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix : <https://cyrilvoyant.github.io/ontology/influence-index-bibliometrics#> .
+@prefix wsem: <https://w3id.org/websemantic/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-# Instances of the WebSemantic core vocabulary for influence-index-bibliometrics (generated 2026-10-23; documentation only).
-
-:software a wsem:Software, schema:SoftwareSourceCode ;
-    schema:name "Influence Index: a log-based measure of research influence for institutions (MATLAB, processed data)" ;
+:software a schema:SoftwareSourceCode,
+        wsem:Software ;
+    dcterms:modified "2026-10-23" ;
+    owl:sameAs <https://doi.org/10.5281/zenodo.19706465> ;
+    schema:author [ a schema:Person ;
+            schema:name "Mathilde Marchand-Lasserre" ],
+        <https://orcid.org/0000-0001-8005-4153>,
+        <https://orcid.org/0000-0002-5403-9328>,
+        <https://orcid.org/0000-0002-7299-680X>,
+        <https://orcid.org/0000-0003-0242-7377>,
+        <https://orcid.org/0000-0003-3118-6859> ;
     schema:codeRepository <https://github.com/cyrilvoyant/influence-index-bibliometrics> ;
-    wsem:conceptDOI "https://doi.org/10.5281/zenodo.19706465" ;
-    schema:identifier <https://doi.org/10.5281/zenodo.19706465> ;
-    schema:license "MIT" ;
-    schema:programmingLanguage "MATLAB" ;
+    schema:dateModified "2026-10-23"^^xsd:date ;
     schema:description "Reads the concentration of highly cited researchers in an institution against a neutral 2 % baseline, on a doubling scale independent of size." ;
-    schema:author <https://orcid.org/0000-0003-0242-7377> ;
-    schema:author <https://orcid.org/0000-0001-8005-4153> ;
-    schema:author <https://orcid.org/0000-0002-7299-680X> ;
-    schema:author <https://orcid.org/0000-0002-5403-9328> ;
-    schema:author [ a schema:Person ; schema:name "Mathilde Marchand-Lasserre" ] ;
-    schema:author <https://orcid.org/0000-0003-3118-6859> ;
-    wsem:declaresParameter :in0 ;
-    wsem:declaresParameter :in1 ;
-    wsem:declaresParameter :in2 ;
-    wsem:declaresOutput :out0 ;
-    wsem:declaresOutput :out1 ;
-    dcterms:modified "2026-10-23" .
+    schema:identifier <https://doi.org/10.5281/zenodo.19706465> ;
+    schema:keywords "bibliometrics",
+        "highly cited researchers",
+        "influence index",
+        "research evaluation" ;
+    schema:license "MIT" ;
+    schema:name "Influence Index: a log-based measure of research influence for institutions (MATLAB, processed data)" ;
+    schema:programmingLanguage "MATLAB" ;
+    wsem:conceptDOI "https://doi.org/10.5281/zenodo.19706465" ;
+    wsem:declaresOutput :out0,
+        :out1 ;
+    wsem:declaresParameter :in0,
+        :in1,
+        :in2 .
 
-<https://orcid.org/0000-0003-0242-7377> a schema:Person ; schema:name "Cyril Voyant" .
-<https://orcid.org/0000-0001-8005-4153> a schema:Person ; schema:name "Jeroen Baas" .
-<https://orcid.org/0000-0002-7299-680X> a schema:Person ; schema:name "Roy Boverhof" .
-<https://orcid.org/0000-0002-5403-9328> a schema:Person ; schema:name "Paolo Stringari" .
-<https://orcid.org/0000-0003-3118-6859> a schema:Person ; schema:name "John P. A. Ioannidis" .
-:in0 a wsem:ParameterDefinition ;
-    skos:prefLabel "X" ;
-    wsem:apiVariable "X" ;
+:in0 a schema:PropertyValueSpecification,
+        wsem:ParameterDefinition ;
     skos:definition "highly cited authors of the institution" ;
+    skos:prefLabel "X" ;
+    schema:description "highly cited authors of the institution" ;
+    schema:name "X" ;
+    schema:unitCode unit:NUM ;
+    schema:unitText "count" ;
+    schema:valueRequired true ;
+    wsem:apiVariable "X" ;
     wsem:canonicalUnit unit:NUM ;
     wsem:quantityKind qk:Count .
-:in1 a wsem:ParameterDefinition ;
-    skos:prefLabel "N" ;
-    wsem:apiVariable "N" ;
+
+:in1 a schema:PropertyValueSpecification,
+        wsem:ParameterDefinition ;
     skos:definition "eligible authors of the institution" ;
+    skos:prefLabel "N" ;
+    schema:description "eligible authors of the institution" ;
+    schema:name "N" ;
+    schema:unitCode unit:NUM ;
+    schema:unitText "count" ;
+    schema:valueRequired true ;
+    wsem:apiVariable "N" ;
     wsem:canonicalUnit unit:NUM ;
     wsem:quantityKind qk:Count .
-:in2 a wsem:ParameterDefinition ;
+
+:in2 a schema:PropertyValueSpecification,
+        wsem:ParameterDefinition ;
+    skos:definition "processed data from the Stanford–Elsevier Top 2 % lists" ;
     skos:prefLabel "Career.xlsx, Single.xlsx" ;
-    wsem:apiVariable "Career.xlsx, Single.xlsx" ;
-    skos:definition "processed data from the Stanford–Elsevier Top 2 % lists" .
-:out0 a wsem:OutputVariable ;
-    skos:prefLabel "I" ;
-    wsem:apiVariable "I" ;
+    schema:description "processed data from the Stanford–Elsevier Top 2 % lists" ;
+    schema:name "Career.xlsx, Single.xlsx" ;
+    schema:valueRequired true ;
+    wsem:apiVariable "Career.xlsx, Single.xlsx" .
+
+:out0 a schema:PropertyValueSpecification,
+        wsem:OutputVariable ;
     skos:definition "Influence Index" ;
+    skos:prefLabel "I" ;
+    schema:description "Influence Index" ;
+    schema:name "I" ;
+    schema:unitCode unit:UNITLESS ;
+    schema:unitText "1" ;
+    schema:valueRequired true ;
+    wsem:apiVariable "I" ;
     wsem:canonicalUnit unit:UNITLESS ;
     wsem:quantityKind qk:Dimensionless .
-:out1 a wsem:OutputVariable ;
-    skos:prefLabel "Delta_I" ;
-    wsem:apiVariable "Delta_I" ;
+
+:out1 a schema:PropertyValueSpecification,
+        wsem:OutputVariable ;
     skos:definition "change between the current and the historical index" ;
+    skos:prefLabel "Delta_I" ;
+    schema:description "change between the current and the historical index" ;
+    schema:name "Delta_I" ;
+    schema:unitCode unit:UNITLESS ;
+    schema:unitText "1" ;
+    schema:valueRequired true ;
+    wsem:apiVariable "Delta_I" ;
     wsem:canonicalUnit unit:UNITLESS ;
     wsem:quantityKind qk:Dimensionless .
+
+<https://orcid.org/0000-0001-8005-4153> a schema:Person ;
+    schema:name "Jeroen Baas" .
+
+<https://orcid.org/0000-0002-5403-9328> a schema:Person ;
+    schema:name "Paolo Stringari" .
+
+<https://orcid.org/0000-0002-7299-680X> a schema:Person ;
+    schema:name "Roy Boverhof" .
+
+<https://orcid.org/0000-0003-0242-7377> a schema:Person ;
+    schema:name "Cyril Voyant" .
+
+<https://orcid.org/0000-0003-3118-6859> a schema:Person ;
+    schema:name "John P. A. Ioannidis" .
+
