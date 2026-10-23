@@ -1,0 +1,116 @@
+{
+  "descriptor": "websemantic-lite/0.1",
+  "generated": "2026-10-23",
+  "vocabulary": "https://w3id.org/websemantic/ns#",
+  "software": {
+    "name": "influence-index-bibliometrics",
+    "title": "Influence Index: a log-based measure of research influence for institutions (MATLAB, processed data)",
+    "repository": "https://github.com/cyrilvoyant/influence-index-bibliometrics",
+    "conceptDOI": "https://doi.org/10.5281/zenodo.19706465",
+    "license": "MIT",
+    "programmingLanguage": "MATLAB",
+    "authors": [
+      {
+        "name": "Cyril Voyant",
+        "orcid": "https://orcid.org/0000-0003-0242-7377"
+      },
+      {
+        "name": "Jeroen Baas",
+        "orcid": "https://orcid.org/0000-0001-8005-4153"
+      },
+      {
+        "name": "Roy Boverhof",
+        "orcid": "https://orcid.org/0000-0002-7299-680X"
+      },
+      {
+        "name": "Paolo Stringari",
+        "orcid": "https://orcid.org/0000-0002-5403-9328"
+      },
+      {
+        "name": "Mathilde Marchand-Lasserre"
+      },
+      {
+        "name": "John P. A. Ioannidis",
+        "orcid": "https://orcid.org/0000-0003-3118-6859"
+      }
+    ]
+  },
+  "article": {
+    "citation": "C. Voyant, J. Baas, R. Boverhof, P. Stringari, M. Marchand-Lasserre, J. P. A. Ioannidis. A log-based influence index for evaluating research institutions",
+    "doi": null,
+    "status": "manuscript in submission: title and principle only, no result reported here"
+  },
+  "tasks": {
+    "supported": [
+      "compute the Influence Index of an institution from public Top 2 % data"
+    ],
+    "out_of_scope": [
+      "ranking individuals",
+      "results of the submitted manuscript"
+    ]
+  },
+  "inputs": [
+    {
+      "field": "X",
+      "type": "int",
+      "required": true,
+      "definition": "highly cited authors of the institution",
+      "unit": "unit:NUM",
+      "unit_symbol": "count",
+      "unit_iri": "http://qudt.org/vocab/unit/NUM",
+      "quantity_kind_iri": "http://qudt.org/vocab/quantitykind/Count",
+      "bounds": ">= 0"
+    },
+    {
+      "field": "N",
+      "type": "int",
+      "required": true,
+      "definition": "eligible authors of the institution",
+      "unit": "unit:NUM",
+      "unit_symbol": "count",
+      "unit_iri": "http://qudt.org/vocab/unit/NUM",
+      "quantity_kind_iri": "http://qudt.org/vocab/quantitykind/Count",
+      "bounds": "> 0"
+    },
+    {
+      "field": "Career.xlsx, Single.xlsx",
+      "type": "table",
+      "required": true,
+      "definition": "processed data from the Stanford–Elsevier Top 2 % lists"
+    }
+  ],
+  "outputs": [
+    {
+      "field": "I",
+      "type": "float",
+      "required": true,
+      "definition": "Influence Index",
+      "unit": "unit:UNITLESS",
+      "unit_symbol": "1",
+      "unit_iri": "http://qudt.org/vocab/unit/UNITLESS",
+      "quantity_kind_iri": "http://qudt.org/vocab/quantitykind/Dimensionless"
+    },
+    {
+      "field": "Delta_I",
+      "type": "float",
+      "required": true,
+      "definition": "change between the current and the historical index",
+      "unit": "unit:UNITLESS",
+      "unit_symbol": "1",
+      "unit_iri": "http://qudt.org/vocab/unit/UNITLESS",
+      "quantity_kind_iri": "http://qudt.org/vocab/quantitykind/Dimensionless"
+    }
+  ],
+  "rules": [
+    "Never invent a value. Each input is given by the user, an exact unit conversion of a given value, or a documented default that the user explicitly accepts.",
+    "Use the canonical unit of each field; convert exactly and say so (for example 2 km -> 2000 m). Never mix a percentage and a fraction.",
+    "Ask when a request is ambiguous or a required input is missing; do not infer a number from a place name or a qualitative word.",
+    "Run the code unmodified. Report only what was actually computed, with quantity, unit and the input values used; never present a planned or unavailable run as a result.",
+    "State the scope and the limits below when you report a result.",
+    "Citation-based indicators are proxies, not judgments of individuals or of quality."
+  ],
+  "limits": [
+    "Manuscript in submission: report the formula and the code, not institutional results."
+  ],
+  "full_contract": null
+}

@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "wsem": "https://w3id.org/websemantic/ns#"
+  },
+  "@type": "SoftwareSourceCode",
+  "@id": "https://doi.org/10.5281/zenodo.19706465",
+  "name": "Influence Index: a log-based measure of research influence for institutions (MATLAB, processed data)",
+  "description": "Reads the concentration of highly cited researchers in an institution against a neutral 2 % baseline, on a doubling scale independent of size.",
+  "codeRepository": "https://github.com/cyrilvoyant/influence-index-bibliometrics",
+  "license": "MIT",
+  "programmingLanguage": "MATLAB",
+  "keywords": [
+    "bibliometrics",
+    "research evaluation",
+    "influence index",
+    "highly cited researchers"
+  ],
+  "dateModified": "2026-10-23",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Cyril Voyant",
+      "@id": "https://orcid.org/0000-0003-0242-7377"
+    },
+    {
+      "@type": "Person",
+      "name": "Jeroen Baas",
+      "@id": "https://orcid.org/0000-0001-8005-4153"
+    },
+    {
+      "@type": "Person",
+      "name": "Roy Boverhof",
+      "@id": "https://orcid.org/0000-0002-7299-680X"
+    },
+    {
+      "@type": "Person",
+      "name": "Paolo Stringari",
+      "@id": "https://orcid.org/0000-0002-5403-9328"
+    },
+    {
+      "@type": "Person",
+      "name": "Mathilde Marchand-Lasserre"
+    },
+    {
+      "@type": "Person",
+      "name": "John P. A. Ioannidis",
+      "@id": "https://orcid.org/0000-0003-3118-6859"
+    }
+  ],
+  "wsem:declaresParameter": [
+    {
+      "@type": "PropertyValueSpecification",
+      "name": "X",
+      "description": "highly cited authors of the institution",
+      "valueRequired": true,
+      "unitText": "count",
+      "unitCode": "http://qudt.org/vocab/unit/NUM"
+    },
+    {
+      "@type": "PropertyValueSpecification",
+      "name": "N",
+      "description": "eligible authors of the institution",
+      "valueRequired": true,
+      "unitText": "count",
+      "unitCode": "http://qudt.org/vocab/unit/NUM"
+    },
+    {
+      "@type": "PropertyValueSpecification",
+      "name": "Career.xlsx, Single.xlsx",
+      "description": "processed data from the Stanford–Elsevier Top 2 % lists",
+      "valueRequired": true
+    }
+  ],
+  "wsem:declaresOutput": [
+    {
+      "@type": "PropertyValueSpecification",
+      "name": "I",
+      "description": "Influence Index",
+      "valueRequired": true,
+      "unitText": "1",
+      "unitCode": "http://qudt.org/vocab/unit/UNITLESS"
+    },
+    {
+      "@type": "PropertyValueSpecification",
+      "name": "Delta_I",
+      "description": "change between the current and the historical index",
+      "valueRequired": true,
+      "unitText": "1",
+      "unitCode": "http://qudt.org/vocab/unit/UNITLESS"
+    }
+  ]
+}
