@@ -112,5 +112,7 @@
   "limits": [
     "Manuscript in submission: report the formula and the code, not institutional results."
   ],
-  "full_contract": null
+  "full_contract": null,
+  "integration_status": "documentation_only_not_registered_with_websemantic",
+  "execution_notice": "This descriptor documents the software. It is not a registered WebSemantic adapter, an executable API, or evidence that the full scientific workflow has been validated."
 }
